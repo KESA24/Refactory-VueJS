@@ -6,7 +6,7 @@
     <title>Document</title>
 </head>
 <body>
-    <div id="root">
+    <!-- <div id="root">
         <div><b>{{title}}</b></div>
         <hr/>
         <ul>
@@ -15,6 +15,26 @@
             </li>
         </ul>
         <button v-on:click="greetKesa">Greet Kesa</button>
+    </div> -->
+
+        <div id="root">
+            <div>
+                <ol>
+                   <li v-for="item in items">
+                       {{item}}
+                   </li> 
+                </ol>
+            </div>
+            <div>
+                <!-- can be changed to v-if , v-if ^& v-else-->
+                <h1 v-show ="signal">on</h1> 
+                <h2 v-show ="!signal">off</h2>
+            </div>
+     
+        <button v-on:click="toggle">
+            toggle
+        </button>
+        <img v-bind:src="imageSource" alt="" width="100px", height="100px">
     </div>
     
     <script src="../js/vue.js"></script>

@@ -6,8 +6,7 @@
     <title>Bulb</title>
 </head>
 <body>
-    
-    <div class="bulb">
+    <div id ="bulb">
         <h1>{{title}}</h1>
         <img v-bind:src="imageOff" v-if="signal" >
         <img v-bind:src="imageOn" v-else="!signal" >

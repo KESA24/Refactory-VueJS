@@ -5,8 +5,8 @@
     data(){
       return{
         title: "Code the light Bulb",
-        imageoff: "\Images\light-bulb-off.jpg",
-        imageOn:"\Images\light-bulb-on-off.jpg",
+        imageoff: "/Images/bulbOff",
+        imageOn:"/Images/bulbOn",
       }},
 
       methods: {

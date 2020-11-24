@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bulb</title>
+</head>
+<body>
+    
+    <div class="bulb">
+        <h1>{{title}}</h1>
+        <img v-bind:src="imageOff" v-if="signal" >
+        <img v-bind:src="imageOn" v-else="!signal" >
+    <div>
+    <button v-on:click="toggle">Switch</button>
+    </div>
+    </div>
+    <script src="vue.js"></script>
+    <script src="bulb_custom.js"></script>
+</body>
+</html>

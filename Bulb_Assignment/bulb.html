@@ -3,18 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bulb.css">
     <title>Bulb</title>
 </head>
 <body>
     <div id ="bulb">
         <h1>{{title}}</h1>
-        <img v-bind:src="imageOff" v-if="signal" >
-        <img v-bind:src="imageOn" v-else="!signal" >
-    <div>
-    <button v-on:click="toggle">Switch</button>
-    </div>
+        <img src="Images/bulbOff.jpg" v-show="signal" >
+        <img src="Images/bulbOn.jpg" v-show="!signal" >
+        <button v-on:click="toggle">Switch</button>
     </div>
     <script src="vue.js"></script>
-    <script src="bulb_custom.js"></script>
+    <script src="bulbcustom.js"></script>
 </body>
 </html>
